@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1716792945 source:c:\users\hp\desktop\vit\fy\semester2\psap\numbersystembasedcalculator\main.c
+	<stdio.h>
+	<stdlib.h>
+	"NBSC.h"
+	<stdbool.h>
+
+1716768390 c:\users\hp\desktop\vit\fy\semester2\psap\numbersystembasedcalculator\nbsc.h
+	<string.h>
+	<math.h>
+	<stdbool.h>
+	<stdio.h>
+
