@@ -1,0 +1,136 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background-color: #010101;
+    padding: 0;
+}
+
+header {
+    background-color: #010101;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+}
+
+main {
+    margin: 20px;
+}
+
+#converter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+td {
+    padding: 10px;
+}
+
+input, select {
+    width: 250px; /* Increased width for better visibility */
+    padding: 10px;
+    font-size: 18px; /* Increased font size for better readability */
+}
+
+button {
+    background-color: white;
+    color: #010101;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 18px; /* Increased font size for better readability */
+    margin-top: 20px; /* Added margin to separate the button from the table */
+}
+
+button:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8); /* Black background with opacity */
+}
+
+.popup-content {
+    background-color: #333; /* Black background for the popup content */
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 20px; /* Rounded corners */
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    color: white; /* White text color for better contrast */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #ffffff; /* Match background color with header */
+    padding: 20px 0;
+    width: 100%;
+    margin-top: 200px;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 60px; /* Increased spacing between icons */
+}
+
+.icon {
+    width: 60px; /* Increased size of icons */
+    height: 60px; /* Increased size of icons */
+    border-radius: 50%;
+    display: inline-block;
+    background-size: cover;
+}
+
+.instagram {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/2111/2111463.png'); /* Instagram icon URL */
+}
+
+.linkedin {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/174/174857.png'); /* LinkedIn icon URL */
+}
+
+.github {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/25/25231.png'); /* GitHub icon URL */
+}
+
+.instagram:hover, .linkedin:hover, .github:hover {
+    opacity: 0.7;
+}

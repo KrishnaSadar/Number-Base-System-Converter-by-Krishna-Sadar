@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Base System Converter by Krishna Sadar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Number Base System Converter By Krishna Sadar</h1>
+    </header>
+    <main>
+        <section id="converter">
+            <table>
+                <tr>
+                    <td><label for="inputBase">Select the input base:</label></td>
+                    <td>
+                        <select id="inputBase">
+                            <option value="10">Decimal</option>
+                            <option value="2">Binary</option>
+                            <option value="8">Octal</option>
+                            <option value="16">Hexadecimal</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <input type="number" id="customInputBase" placeholder="Enter base" min="2" max="36" style="display: none;">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="numberInput">Enter the number:</label></td>
+                    <td><input type="text" id="numberInput"></td>
+                </tr>
+                <tr>
+                    <td><label for="outputBase">Enter the base to convert to:</label></td>
+                    <td><input type="number" id="outputBase" min="2" max="36"></td>
+                </tr>
+            </table>
+            <button onclick="convertNumber()">Convert</button>
+        </section>
+    </main>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <p id="result"></p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/krishna_sadar_786?igsh=MWYydjg3czEwOTN1cg==" target="_blank" class="icon instagram"></a>
+            <a href="https://www.linkedin.com/in/krishna-sadar-7238682b3/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="icon linkedin"></a>
+            <a href="https://github.com/KrishnaSadar" target="_blank" class="icon github"></a>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
